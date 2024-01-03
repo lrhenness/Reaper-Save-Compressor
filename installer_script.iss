@@ -31,7 +31,7 @@ Source: ".\reaper_save_compressor.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Name: "{group}\{cm:UninstallProgram,reaper_save_compressor}"; Filename: "{uninstallexe}"
 [Icons]
 Name: "{group}\{cm:UninstallProgram,Folder Encrypter}"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\reaper_save_compressor"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: """-ExecutionPolicy Bypass -NoExit -File ""{app}\reaper_save_compressor.ps1"""""; WorkingDir: "{app}"
+Name: "{autodesktop}\Reaper Save Compressor"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: """-ExecutionPolicy Bypass -NoExit -File ""{app}\reaper_save_compressor.ps1"""""; WorkingDir: "{app}"
 
 [Run]
 Filename: "explorer"; Parameters: """{app}\reaper_save_compressor.pdf"""; Description: "View the user guide"; Flags: postinstall skipifsilent
