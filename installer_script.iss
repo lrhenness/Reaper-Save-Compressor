@@ -6,9 +6,9 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{15742D86-18B8-486F-8579-8C4528EFF072}
 AppName=reaper_save_compressor
-AppVersion=1.0
-;AppVerName=reaper_save_compressor 1.0
-AppPublisher=stigs@stigsdomain.com
+AppVersion=1.1
+;AppVerName=reaper_save_compressor 1.1
+AppPublisher=stigs+reaper@stigsdomain.com
 DefaultDirName={autopf}\reaper_save_compressor
 DefaultGroupName=reaper_save_compressor
 AllowNoIcons=yes
@@ -27,8 +27,6 @@ Source: ".\reaper_save_compressor.ps1"; DestDir: "{app}"; Flags: ignoreversion
 Source: ".\README.pdf"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
-[Icons]
-Name: "{group}\{cm:UninstallProgram,reaper_save_compressor}"; Filename: "{uninstallexe}"
 [Icons]
 Name: "{group}\{cm:UninstallProgram,Reaper Save Compressor}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\Reaper Save Compressor"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -NoExit -File ""{app}\reaper_save_compressor.ps1"""; WorkingDir: "{app}"
