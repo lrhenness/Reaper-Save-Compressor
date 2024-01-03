@@ -7,6 +7,7 @@ Simple and effective tool to archive and optionally encrypt your project directo
 ### Installation
 
 1. **Run the Installer**: Double-click the installer and follow the on-screen instructions.
+2. **Install 7-zip**: Ensure 7-Zip is installed on your system. Download from [7-Zip's official website](https://www.7-zip.org/).
 
 ### Using Reaper Save Compressor
 
