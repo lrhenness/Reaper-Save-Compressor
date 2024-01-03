@@ -24,14 +24,14 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: ".\reaper_save_compressor.ps1"; DestDir: "{app}"; Flags: ignoreversion
-Source: ".\reaper_save_compressor.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\README.pdf"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\{cm:UninstallProgram,reaper_save_compressor}"; Filename: "{uninstallexe}"
 [Icons]
-Name: "{group}\{cm:UninstallProgram,Folder Encrypter}"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\Reaper Save Compressor"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: """-ExecutionPolicy Bypass -NoExit -File ""{app}\reaper_save_compressor.ps1"""""; WorkingDir: "{app}"
+Name: "{group}\{cm:UninstallProgram,Reaper Save Compressor}"; Filename: "{uninstallexe}"
+Name: "{autodesktop}\Reaper Save Compressor"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -NoExit -File ""{app}\reaper_save_compressor.ps1"""; WorkingDir: "{app}"
 
 [Run]
-Filename: "explorer"; Parameters: """{app}\reaper_save_compressor.pdf"""; Description: "View the user guide"; Flags: postinstall skipifsilent
+Filename: "explorer"; Parameters: """{app}\README.pdf"""; Description: "View the user guide"; Flags: postinstall skipifsilent
